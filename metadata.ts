@@ -1,5 +1,5 @@
 import * as fs from 'fs'
-import { colors } from './colors'
+import { prideFlagColors } from './prideFlagColors'
 
 const AMOUNT = 5
 const IMAGE_URI = 'ipfs://URI/'
@@ -20,7 +20,7 @@ for (let i = 1; i <= AMOUNT; i++) {
 	const json = {
 		name: 'Bordão é Gay #' + i,
 		image: IMAGE_URI + i + IMAGE_EXTENSION,
-		color: colors[0],
+		color: prideFlagColors[0],
 	}
 
 	fs.writeFileSync(METADATA_DIRECTORY + '/' + i + '.json', JSON.stringify(json))

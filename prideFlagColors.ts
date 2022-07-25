@@ -1,4 +1,4 @@
-export const colors = {
+export const prideFlagColors = {
 	red: '#e20203',
 	orange: '#ff8b00',
 	yellow: '#feed00',
