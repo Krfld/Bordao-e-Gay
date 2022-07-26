@@ -20,7 +20,7 @@ for (let i = 1; i <= AMOUNT; i++) {
 	const json = {
 		name: 'Bordão é Gay #' + i,
 		image: IMAGE_URI + i + IMAGE_EXTENSION,
-		color: prideFlagColors[0],
+		color: prideFlagColors.red,
 	}
 
 	fs.writeFileSync(METADATA_DIRECTORY + '/' + i + '.json', JSON.stringify(json))
